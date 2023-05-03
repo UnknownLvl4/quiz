@@ -23,5 +23,9 @@ namespace Calculate_Quiz
         {
             MessageBox.Show("Correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        private void popupWrongMessageBox()
+        {
+            MessageBox.Show("Wrong!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
