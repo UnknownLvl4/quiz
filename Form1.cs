@@ -19,8 +19,9 @@ namespace Calculate_Quiz
 
         }
 
-        private void txtQuestion_TextChanged(object sender, EventArgs e)
+        private void popupCorrectMessageBox()
         {
+            MessageBox.Show("Correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

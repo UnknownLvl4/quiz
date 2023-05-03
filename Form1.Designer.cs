@@ -47,7 +47,6 @@
             this.txtQuestion.Size = new System.Drawing.Size(358, 33);
             this.txtQuestion.TabIndex = 0;
             this.txtQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtQuestion.TextChanged += new System.EventHandler(this.txtQuestion_TextChanged);
             // 
             // button1
             // 
