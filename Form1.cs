@@ -81,8 +81,8 @@ namespace Calculate_Quiz
             this.button4.Text = rnd.Next(limit * 5).ToString();
             // Put correct result into correct position answer
             if (resultPos == 0) this.button1.Text = result.ToString();
-            if (resultPos == 1) this.button2.Text = result.ToString();
-            if (resultPos == 2) this.button3.Text = result.ToString();
+            if (resultPos == 1) this.button3.Text = result.ToString();
+            if (resultPos == 2) this.button2.Text = result.ToString();
             if (resultPos == 3) this.button4.Text = result.ToString();
         }
 
