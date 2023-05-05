@@ -17,6 +17,8 @@ namespace Calculate_Quiz
         private int resultPos;
         // Score
         private int score = 0;
+        // Question count
+        private int quesCount = 0;
 
         public QuizFrm()
         {
@@ -27,6 +29,12 @@ namespace Calculate_Quiz
 
         private void randomQuestionAndResult()
         {
+            quesCount++;
+            if (quesCount > 20)
+            {
+                popupSummaryMessageBox();
+                Close();
+            }
             // Random 0 <= a < limit, 0 < b <= limit
             Random rnd = new Random();
             a = rnd.Next(limit);
@@ -54,8 +62,8 @@ namespace Calculate_Quiz
                     }
                 case 3:
                     {
-                        result = a / b;
-                        this.txtQuestion.Text = a + " / " + b + " = ?";
+                        result = a % b;
+                        this.txtQuestion.Text = a + " % " + b + " = ?";
                         break;
                     }
             }
@@ -115,6 +123,10 @@ namespace Calculate_Quiz
             MessageBox.Show("Wrong!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             randomQuestionAndResult();
             randomAnswers();
+        }
+        private void popupSummaryMessageBox()
+        {
+            MessageBox.Show(score + " correct answers", "Summary", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void QuizFrm_Load(object sender, EventArgs e)
         {
