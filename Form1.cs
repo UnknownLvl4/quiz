@@ -103,10 +103,14 @@ namespace Calculate_Quiz
         private void popupCorrectMessageBox()
         {
             MessageBox.Show("Correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            randomQuestionAndResult();
+            randomAnswers();
         }
         private void popupWrongMessageBox()
         {
             MessageBox.Show("Wrong!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            randomQuestionAndResult();
+            randomAnswers();
         }
         private void QuizFrm_Load(object sender, EventArgs e)
         {
