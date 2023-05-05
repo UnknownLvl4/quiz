@@ -39,6 +39,7 @@
             this.AnsC = new System.Windows.Forms.Label();
             this.AnsD = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ScoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtQuestion
@@ -165,12 +166,24 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Who is smarter than 5th grade student";
             // 
+            // ScoreLabel
+            // 
+            this.ScoreLabel.AutoSize = true;
+            this.ScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ScoreLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreLabel.Location = new System.Drawing.Point(947, 9);
+            this.ScoreLabel.Name = "ScoreLabel";
+            this.ScoreLabel.Size = new System.Drawing.Size(28, 32);
+            this.ScoreLabel.TabIndex = 11;
+            this.ScoreLabel.Text = "0";
+            // 
             // QuizFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(987, 422);
+            this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AnsD);
             this.Controls.Add(this.AnsC);
@@ -201,6 +214,7 @@
         private System.Windows.Forms.Label AnsC;
         private System.Windows.Forms.Label AnsD;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ScoreLabel;
     }
 }
 

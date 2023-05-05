@@ -15,6 +15,8 @@ namespace Calculate_Quiz
         private int a, b, op, result;
         // Result position
         private int resultPos;
+        // Score
+        private int score = 0;
 
         public QuizFrm()
         {
@@ -105,6 +107,8 @@ namespace Calculate_Quiz
             MessageBox.Show("Correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             randomQuestionAndResult();
             randomAnswers();
+            score++;
+            this.ScoreLabel.Text = score.ToString();
         }
         private void popupWrongMessageBox()
         {
