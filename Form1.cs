@@ -108,7 +108,7 @@ namespace Calculate_Quiz
         }
         private void popupWrongMessageBox()
         {
-            MessageBox.Show("Wrong!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Wrong!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             randomQuestionAndResult();
             randomAnswers();
         }
